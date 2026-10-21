@@ -4652,6 +4652,7 @@ export function ReviewCodeView({
       annotation:
         | DiffLineAnnotation<ReviewAnnotationMetadata>
         | LineAnnotation<ReviewAnnotationMetadata>,
+      _fileOrDiff: unknown,
       item: CodeViewItem<ReviewAnnotationMetadata>,
     ) => {
       if (annotation.metadata.type === 'image-preview') {
